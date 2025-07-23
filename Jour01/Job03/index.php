@@ -22,10 +22,10 @@
 <body>
 
 <?php
-$monBool = true;
-$monEntier = 42;
-$maChaine = "Bonjour";
-$monFloat = 3.14;
+$bool = true;
+$entier = 42;
+$chaine = "Bonjour";
+$float = 3.14;
 ?>
 
 <table>
@@ -39,23 +39,23 @@ $monFloat = 3.14;
     <tbody>
         <tr>
             <td>boolean</td>
-            <td>monBool</td>
-            <td><?php echo $monBool;?></td>
+            <td>Bool</td>
+            <td><?php echo $bool;?></td>
         </tr>
         <tr>
             <td>integer</td>
-            <td>monEntier</td>
-            <td><?php echo $monEntier;?></td>
+            <td>Entier</td>
+            <td><?php echo $entier;?></td>
         </tr>
         <tr>
             <td>string</td>
-            <td>maChaine</td>
-            <td><?php echo $maChaine;?></td>
+            <td>Chaine</td>
+            <td><?php echo $chaine;?></td>
         </tr>
         <tr>
             <td>float</td>
-            <td>monFloat</td>
-            <td><?php echo $monFloat;?></td>
+            <td>Float</td>
+            <td><?php echo $float;?></td>
         </tr>
     </tbody>
 </table>
