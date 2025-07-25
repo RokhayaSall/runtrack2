@@ -8,6 +8,7 @@ echo '<pre>';
     print_r ($caracteres);
 echo '</pre>';
 
+
 $index = 0;
 
 foreach ($caracteres as $caractere) {
