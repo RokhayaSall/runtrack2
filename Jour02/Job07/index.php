@@ -1,8 +1,10 @@
 <?php
-$hauteur = ;
+$hauteur = 5;
+$etoile = "-";
 
-for ($i = 1; $i < $hauteur; $i++) {
-    $espace = '';
-}
-?>
+for ($i = 0; $i <=$hauteur; $i++) {
+    for ($l = 0; $l <= $i; $l++) {
+        echo $etoile;
+    }
+    echo "<br />";
 
