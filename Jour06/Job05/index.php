@@ -34,7 +34,7 @@
     
     ?>
         <form method= "post">
-                <label for="styles">Backgroung Color</label>
+                <label for="styles">background Color</label>
                 <select name="styles" id="styles">
                 <option value="style1.css">Style 1</option>
                 <option value="style2.css">Style 2</option>

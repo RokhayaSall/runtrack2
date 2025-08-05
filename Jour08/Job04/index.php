@@ -1,20 +1,39 @@
-<?php
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
 
-function calcul($a, $operation, $b){
+<?php 
+      
 
-    if ($operation === "+") {
-        return $a + $b;
-    }elseif ($operation === "-") {
-        return $a - $b;
-    }elseif ($operation === "*") {
-       return $a * $b;
-    }elseif ($operation === "%") {
-        return $a % $b;
-    }elseif ($operation === "/") {
-         return $a / $b;
-    }
-}
+        if (isset($_POST['dec'])) {
+          setcookie("prenom", "", time() - 3600);
+          $_COOKIE['prenom'] = NULL;
+        }
 
-$resultat = calcul(5,"%",10);
-echo $resultat;
+        
 
+        
+
+       
+      
+      
+      
+      ?>
+
+        <form method= "post" >
+                
+                
+                
+                <button type="submit" name="dec">Deconnexion</button>
+                <label for="prenom"></label>
+                <input type="text" id="prenom" name="prenom" placeholder="prenom">
+                <button type="submit" name="con">Connexion</button>
+        </form>
+
+        
+</html>

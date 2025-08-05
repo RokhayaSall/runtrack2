@@ -21,8 +21,7 @@
         }else {
           $_SESSION['nbvisites'] = 1;
         }
-      
-      
+        
       
       ?>
 

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -17,20 +16,23 @@
         }
 
         if (isset($_COOKIE['nbvisites'])) {
-          $nbvisites = $_COOKIE['nbvisites']+1;
+          $_COOKIE['nbvisites']++;
+          
           
         }else {
-          $nbvisites = 1;
+          $_COOKIE['nbvisites'] = 1;
           
         }
 
-        setcookie("nbvisites", $nbvisites, time() - 3600);
+        setcookie("nbvisites", $_COOKIE['nbvisites'], time() + 3600);
+
+       
       
       
       
       ?>
 
-      <h1>Nombre de visite :<?php echo $nbvisites; ?></h1>
+      <h1>Nombre de visite :<?php echo $_COOKIE['nbvisites']; ?></h1>
       <form methode="post">
         <button type="submit" name="reset">Reset</button>
       </form>
